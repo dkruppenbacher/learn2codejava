@@ -1,0 +1,386 @@
+/* iPhone 8 - Home */
+
+/* Auto Layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: relative;
+width: 375px;
+height: 667px;
+
+background: #FFFFFF;
+
+	/* Header */
+
+	/* Auto Layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+
+	position: static;
+	width: 375px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+
+	background: #6AABF0;
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 0px 0px;
+
+		/* Logo */
+
+		position: static;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+
+		background: url(gearmonke_logo.png);
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 0px 0px;
+
+		/* Home button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 137px;
+
+		position: static;
+		width: 81.25px;
+		height: 50px;
+		left: 50px;
+		top: 0px;
+
+		background: #B45914;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* Home */
+
+			position: static;
+			height: 17px;
+			left: 29.69%;
+			right: 29.69%;
+			top: 16.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 17px;
+
+			/* identical to box height */
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+		/* Content button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 122px;
+
+		position: static;
+		width: 81.25px;
+		height: 50px;
+		left: 131.25px;
+		top: 0px;
+
+		background: #6AABF0;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 2;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* Content */
+
+			position: static;
+			height: 17px;
+			left: 22.92%;
+			right: 22.92%;
+			top: 16.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 17px;
+
+			/* identical to box height */
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+		/* About Us button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 114px;
+
+		position: static;
+		width: 81.25px;
+		height: 50px;
+		left: 212.5px;
+		top: 0px;
+
+		background: #6AABF0;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 3;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* About Us */
+
+			position: static;
+			height: 17px;
+			left: 19.85%;
+			right: 19.85%;
+			top: 16.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 17px;
+
+			/* identical to box height */
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+		/* Donate button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 127px;
+
+		position: static;
+		width: 81.25px;
+		height: 50px;
+		left: 293.75px;
+		top: 0px;
+
+		background: #6AABF0;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 4;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* Donate */
+
+			position: static;
+			height: 17px;
+			left: 25.38%;
+			right: 25.38%;
+			top: 16.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 17px;
+
+			/* identical to box height */
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+	/* Body */
+
+	/* Auto Layout */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 5px;
+
+	position: static;
+	width: 375px;
+	height: 597px;
+	left: 0px;
+	top: 50px;
+
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 1;
+	margin: 0px 0px;
+
+		/* Title */
+
+		position: static;
+		width: 365px;
+		height: 50px;
+		left: calc(50% - 365px/2);
+		top: 0px;
+
+		font-family: Coda;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		line-height: 37px;
+		text-align: center;
+
+		color: #000000;
+
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 30px 0px;
+
+		/* Page content */
+
+		position: static;
+		width: 365px;
+		height: 546px;
+		left: calc(50% - 365px/2);
+		bottom: -29px;
+
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;
+
+		color: #000000;
+
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 30px 0px;
+
+	/* Footer */
+
+	/* Auto Layout */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 13px 556px;
+
+	position: static;
+	width: 375px;
+	height: 20px;
+	left: 0px;
+	top: 647px;
+
+	background: #CCE0F6;
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 2;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 0px 0px;
+
+		/* Footer text */
+
+		position: static;
+		width: 270px;
+		height: 12px;
+		left: 52.5px;
+		top: 4px;
+
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 10px;
+		line-height: 12px;
+
+		/* identical to box height */
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		color: #000000;
+
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+		margin: 10px 0px;

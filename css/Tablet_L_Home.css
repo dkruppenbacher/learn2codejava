@@ -1,0 +1,378 @@
+/* Tablet - Home - Landscape */
+
+/* Auto Layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: relative;
+width: 1194px;
+height: 834px;
+
+background: #FFFFFF;
+
+	/* Header */
+
+	/* Auto Layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+
+	position: static;
+	width: 1194px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 0px 0px;
+
+		/* Home button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 137px;
+
+		position: static;
+		width: 298.5px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+
+		background: #B45914;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* Home */
+
+			position: static;
+			height: 45px;
+			left: 35.59%;
+			right: 35.59%;
+			top: 17.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 32px;
+			line-height: 45px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+		/* Content button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 122px;
+
+		position: static;
+		width: 298.5px;
+		height: 80px;
+		left: 298.5px;
+		top: 0px;
+
+		background: #6AABF0;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* Content */
+
+			position: static;
+			height: 45px;
+			left: 30.74%;
+			right: 30.74%;
+			top: 17.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 32px;
+			line-height: 45px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+		/* About Us button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 114px;
+
+		position: static;
+		width: 298.5px;
+		height: 80px;
+		left: 597px;
+		top: 0px;
+
+		background: #6AABF0;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 2;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* About Us */
+
+			position: static;
+			height: 45px;
+			left: 28.06%;
+			right: 28.06%;
+			top: 17.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 32px;
+			line-height: 45px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+		/* Donate button */
+
+		/* Auto Layout */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 27px 127px;
+
+		position: static;
+		width: 298.5px;
+		height: 80px;
+		left: 895.5px;
+		top: 0px;
+
+		background: #6AABF0;
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 3;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 0px 0px;
+
+			/* Donate */
+
+			position: static;
+			height: 45px;
+			left: 32.41%;
+			right: 32.41%;
+			top: 17.5px;
+
+			font-family: Coda;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 32px;
+			line-height: 45px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			color: #000000;
+
+
+			/* Inside Auto Layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+			margin: 0px 10px;
+
+	/* Body */
+
+	/* Auto Layout */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 40px 40px;
+
+	position: static;
+	width: 1194px;
+	height: 714px;
+	left: 0px;
+	top: 80px;
+
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 1;
+	margin: 0px 0px;
+
+		/* Logo */
+
+		position: static;
+		width: 250px;
+		height: 250px;
+		left: 472px;
+		top: 0px;
+
+		background: url(gearmonke_logo.png);
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+		margin: 30px 0px;
+
+		/* Title */
+
+		position: static;
+		width: 1114px;
+		height: 51px;
+		left: calc(50% - 1114px/2);
+		top: 280px;
+
+		font-family: Coda;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		line-height: 51px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		color: #000000;
+
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 30px 0px;
+
+		/* Page content */
+
+		position: static;
+		width: 1114px;
+		height: 313px;
+		left: calc(50% - 1114px/2);
+		bottom: 40px;
+
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+
+		color: #000000;
+
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 2;
+		align-self: stretch;
+		flex-grow: 1;
+		margin: 30px 0px;
+
+	/* Footer */
+
+	/* Auto Layout */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 13px 556px;
+
+	position: static;
+	width: 1194px;
+	height: 40px;
+	left: 0px;
+	top: 794px;
+
+	background: #CCE0F6;
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 2;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 0px 0px;
+
+		/* Footer text */
+
+		position: static;
+		width: 328px;
+		height: 14px;
+		left: 433px;
+		top: 13px;
+
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+
+		/* identical to box height */
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		color: #000000;
+
+
+		/* Inside Auto Layout */
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+		margin: 10px 0px;
