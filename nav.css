@@ -1,0 +1,65 @@
+body{
+    font-family: 'Roboto Mono';
+}
+p{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 50px 100px;
+  text-align: center;
+}
+h2{
+    text-align: center;
+}
+/*Giving our li a background and height-space*/
+li {
+  flex: 1;
+  height: 66px;
+  background-color: #86c0ff;
+}
+
+/*Making the li's inside of our navbar interactive with color change and padding/margin*/
+li:hover {
+  flex:1.1;
+  transition:all .2s ease;
+  background: #fc6f03;
+}
+/*Styling and sizing our link/letters while giving them a block-level, 'click' ability*/
+a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 23px;
+}
+/*Giving the middle, border-lines a color and size*/
+.navigation li:not(:first-child){
+	border-left: 2px solid #ecf0f1;
+}
+
+.gearMonke{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* footer */
+footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #a3a3a3;
+   color: black;
+   text-align: center;
+}
+footer a{
+    display:inline;
+    color: black;
+}
+.footer1{
+    display: inline;    
+}
+
