@@ -1,0 +1,95 @@
+/*
+Top Nav slides up and hides as you scroll.
+Click on logo to show and hide side nav (logo will spin when clicked to show open(90 deg) and close(normal))
+*/
+
+/* 
+HOME
+	Header:
+		Height=50px (compared to desktop 100px)
+		Text Size=12px
+		logo on left, set size equal to height of header.
+	Body:
+		Title:
+			Text Size=26
+			Float top
+			Centered
+		Page content:
+			Text size=12
+			float top
+			centered
+	Footer
+		height=20px
+		text size=10
+*/
+
+/*
+LESSON
+	Header:
+		Height=50px
+		logo = header height
+		text size = 12
+	Side nav:
+		Chapter button text size =14
+		selected chapter text size=16
+		subchapter text size = 12
+		footer text:
+			float bottom
+			text size = 10
+	Body:
+		breadcrumb text size=8
+		title text size=26
+		page content text size=12
+		padding= L=20px, T=10px, R=5px
+
+	Footer is hidden
+*/
+
+/*
+QUIZ
+	Header:
+        Height=50px
+        logo=50px x 50px
+         text size=12
+
+	Side nav:
+        Width=100px
+        Chapter button text size = 14
+        Selected chapter text size = 16
+        Subchapter text size = 12
+        footer text:
+            float bottom
+            text size=10
+
+	Body:
+        breadcrumb text size=8
+        title text size=26
+        page content text size=12
+        padding:  L=20px, T=10px, R=5px
+
+	Footer is hidden
+*/
+
+/*
+PROJECTS
+	Header:
+        Height=50px
+        logo=50px x 50px
+         text size=12
+
+	Side nav:
+        Chapter button text size = 14
+        Selected chapter text size = 16
+        Subchapter text size = 12
+        footer text:
+            float bottom
+            text size=10
+
+	Body:
+        breadcrumb text size=8
+        title text size=26
+        page content text size=12
+        padding:  l=20px, t=10px, r=5px
+
+	Footer is hidden
+*/
