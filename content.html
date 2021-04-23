@@ -8,7 +8,8 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 <link href="assets/css/nav_content.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Coda&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Coda&family=Roboto:wght@400&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
     
 </head>
 <body>
@@ -84,11 +85,44 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script> 
+<div class='pagecontent'>
+<p>Java is one of the simplest programming languages to understand. You use classes to define a Java program, and they are written like this:<br>
+<!--Use <code> to define a code block. Use <br> to make line breaks, and a &emsp;&emsp; to define a tab-->
+<code>
+/**<br>
+* Simplest program ever<br>
+* @author GearMonke Inc<br>
+* @version 1.0<br>
+*/<br>
+public class example {<br>
+&emsp;&emsp;public static void main(String[] args) {<br>
+&emsp;&emsp;}<br>
+}<br>
+</code><br>
+Let’s break it down:</p>
+<ul>
+<li>The /** and */ are the beginning and end of a multiline comment. Comments are text that are ignored by the compiler, often used for making notes about the code.</li>
+<ul>
+<li>@author is the tag to define the author of the program.</li>
+<li>@version tag defines the version of the program.</li>
+<li>There are more tags that we will go over later.</li>
+</ul>
+<li>To define a class, use <code>public class className {</code>. Add a closing bracket } at the end of the code to close out the class.</li>
+<li>Every class requires a main method, where the most of the code is. To define a main method, use <code>public static void main(String[] args) {</code>.</li> 
+<ul>
+<li>Public means the method can be accessed from other classes.</li>
+<li>Static means the attributes inside won’t be changed by outside classes.</li>
+<li>(String[] args) defines an array of Strings called args.</li>
+</ul>
+</ul>
+<p>There are naming conventions for methods and classes. All names must use camel case, where the 1st letters of words are capitalized. Avoid abbreviations and acronyms, and no numbers should be used in class names.
+There are different files for different purposes. When writing a Java class, you would write in a .java file. Once you run the .java file through the compiler, it will return a .class file, which can then be run, or it can be packaged into a .jar executable program.</p>
+</div>
     
     
   
     <footer>       
-    <p class="footer1"> @2021 GearMonke <a href="info@learn2codejava.com">Contact: info@learn2codejava.com</a></p>
+    <p class="footer1"> @2021 GearMonke <a href="mailto:info@learn2codejava.com">Contact: info@learn2codejava.com</a></p>
     
     </footer>
      
