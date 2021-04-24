@@ -11,7 +11,7 @@ nav {
   position: fixed;
   z-index: 1;
   top: 0px;
-  background-color: white;
+  background-color: #6AABF0;
 }
 nav ul {
   display: flex;
