@@ -153,38 +153,55 @@ h2{
   transform: rotate(360deg);
 }
 
+.gearMonke {
+  transition: transform .7s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; 
+  height: 200px;
+}
+.gearMonke:hover {
+  transform: rotate(360deg);
+}
+
+.page {
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 18px;
+  display: inline-block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.pagecontent {
+  width: 60%;
+  margin: 0px auto;
+  text-align: left;
+  line-height: 2em;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  position: fixed;
+  left: 190px;
+}
+
 code {
   color: #FC6F03;
   background-color: #C4C4C4;
   border: 1px solid #727272;
   padding: 2.5px 5px;
   font-family: 'Roboto Mono';
+  font-weight: bold;
   font-size: 14px;
   text-align: left;
   display: inline-block;
   width: auto;
-}
-
-.pagecontent {
-  width: calc(100% - 200px);
-  width: -webkit-calc(100% - 200px);
-  width: -moz-calc(100% - 200px);
-  font-family: 'Roboto';
-  font-size: 18px;
-  display: inline-block;
-  float: right;
-  padding-top: 110px;
-  padding-right: 20px;
-}
-
-.breadcrumbs {
-  font-size: 14px;
-  margin-left: 0px;
-  margin-top: 0px;
-}
-
-h1 {
-  padding-left: 32%;
+  line-height: normal;
 }
 
 @media only screen and (max-width: 1194px) {
