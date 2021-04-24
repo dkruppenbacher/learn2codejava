@@ -146,6 +146,8 @@ h2{
 /* makes logo spin when hovering over */
 .logo {
   transition: transform .7s ease-in-out;
+  width: 100px; 
+  height: 100px;
 }
 .logo:hover {
   transform: rotate(360deg);
@@ -172,4 +174,38 @@ code {
   display: inline-block;
   float: right;
   padding-top: 110px;
+  padding-right: 20px;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+h1 {
+  padding-left: 32%;
+}
+
+@media only screen and (max-width: 1194px) {
+  nav, nav ul {
+    height: 80px;
+  }
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+  .sidenav {
+    height: calc(100% - 123px);
+    top: 80px;
+  }
+  nav a {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .sidenav {
+    width: 100px;
+  }
 }
