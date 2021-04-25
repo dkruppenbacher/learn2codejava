@@ -6,11 +6,20 @@
 <title>Group Project</title>
 <meta name="viewport" content="width=device width,initial-scale=1.0">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<link href="assets/css/nav_content.css" rel="stylesheet">
+<link href="assets/css/default.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+    $(window).on('load resize',function(){
+        if($(window).width() < 720){
+            window.location = "mobile/content.html"
+        }
+    });
+</script>
     
 </head>
 <body>
@@ -129,7 +138,7 @@ for (i = 0; i < dropdown.length; i++) {
     
   
     <footer>       
-    <p class="footer1"> @2021 GearMonke Inc.&emsp;&emsp;<a href="mailto:info@learn2codejava.com">Contact: info@learn2codejava.com</a></p>
+    <p class="footer"> @2021 GearMonke Inc.&emsp;&emsp;<a href="mailto:info@learn2codejava.com">Contact: info@learn2codejava.com</a></p>
     
     </footer>
      

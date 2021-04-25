@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Isaiah Rivera -->
+<meta charset=utf-8 />
+<title>Group Project</title>
+<meta name="viewport" content="width=device width,initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="../assets/css/mobile.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+    $(window).on('load resize',function(){
+        if($(window).width() > 720){
+            window.location = "../index.html"
+        }
+    });
+</script>
+
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("sideNav");
+  if (x.style.display === "none") {
+    x.style.display = "inherit";
+  } else {
+    x.style.display = "none";
+  }
+} 
+</script>
+</head>
+<body>
+    
+
+    
+    <nav>
+    <ul class="navigation">
+      <img src="../assets/img/gearmonke_logo.svg" alt="GearMonkeLogo" class="logo" onclick="myFunction()">
+      <li><a class='active' href="index.html">Home</a></li>
+      <li><a href="content.html">Content</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Donate</a></li>
+    </ul>
+    </nav>
+<div class='fullpage'>
+   <div class="sidenav" id='sideNav'>
+    <button class="dropdown-btn">Chapter 1
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">1.1</a>
+    <a href="#">1.2</a>
+    <a href="#">1.3</a>
+  </div>
+    <button class="dropdown-btn">Chapter 2
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">2.1</a>
+    <a href="#">2.2</a>
+    <a href="#">2.3</a>
+  </div>
+    <button class="dropdown-btn">Chapter 3
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">3.1</a>
+    <a href="#">3.2</a>
+    <a href="#">3.3</a>
+  </div>
+    <button class="dropdown-btn">Chapter 4
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">4.1</a>
+    <a href="#">4.2</a>
+    <a href="#">4.3</a>
+  </div>
+  <button class="dropdown-btn">Chapter 5
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">5.1</a>
+    <a href="#">5.2</a>
+    <a href="#">5.3</a>
+  </div>
+  <p class="footerBase"> @2021<br>GearMonke Inc.&emsp;&emsp;<a href="mailto:info@learn2codejava.com">Contact: info<br>@<br>learn2codejava.com</a></p>
+</div>
+    
+<script> 
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script> 
+<div class='page'>
+  <p class='breadcrumbs'>Home > Chapter 1 > 1.1 Intro to Java</p>
+  <h1>Introduction to Java</h1>
+  <div class='pagecontent'>
+    <p>Java is one of the simplest programming languages to understand. You use classes to define a Java program, and they are written like this:<br>
+    <!--Use <code> to define a code block. Use <br> to make line breaks, and a &emsp;&emsp; to define a tab-->
+    <code>
+      /**<br>
+      * Simplest program ever<br>
+      * @author GearMonke Inc<br>
+      * @version 1.0<br>
+      */<br>
+      public class example {<br>
+      &emsp;&emsp;public static void main(String[] args) {<br>
+      &emsp;&emsp;&emsp;&emsp;int i = 0;<br>
+      &emsp;&emsp;}<br>
+      }<br>
+    </code><br>
+    Let’s break it down:</p>
+    <ul>
+      <li>The /** and */ are the beginning and end of a multiline comment. Comments are text that are ignored by the compiler, often used for making notes about the code.</li>
+      <ul>
+        <li><code>@author</code> is the tag to define the author of the program.</li>
+        <li><code>@version</code> tag defines the version of the program.</li>
+        <li>There are more tags that we will go over later.</li>
+      </ul>
+      <li>To define a class, use <code>public class className { </code>. Add a closing bracket } at the end of the code to close out the class.</li>
+      <li>Every class requires a main method, where the most of the code is. To define a main method, use <code>public static void main(String[] args) { </code>.</li> 
+      <ul>
+        <li>Public means the method can be accessed from other classes.</li>
+        <li>Static means the attributes inside won’t be changed by outside classes.</li>
+        <li><code>(String[] args)</code> defines an array of Strings called args.</li>
+        <li>Don't forget the closing bracket } !</li>
+      </ul>
+    </ul>
+    <p>There are naming conventions for methods and classes. All names must use camel case, where the 1st letters of words are capitalized. Avoid abbreviations and acronyms, and no numbers should be used in class names.
+    There are different files for different purposes. When writing a Java class, you would write in a .java file. Once you run the .java file through the compiler, it will return a .class file, which can then be run, or it can be packaged into a .jar executable program.</p>
+  </div>
+</div>
+</div>
+     
+   
+    
+    
+ </body>
+ </html>

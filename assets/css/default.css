@@ -1,0 +1,232 @@
+body{
+    font-family: 'Coda';
+    margin: 0px;
+    
+}
+nav {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  background-color: #6AABF0;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  height: 100px;
+}
+/*Giving our li-nav  a background and height-space*/
+nav li {
+  flex: 1;
+  background-color: #6AABF0;
+  transition:all .2s ease;
+}
+
+/*Making the li's inside of our navbar interactive with color change and padding/margin*/
+nav li:hover {
+  flex:1.1;
+  transition:all .2s ease;
+  background: #B45914;
+}
+/*Styling and sizing our link/letters while giving them a block-level, 'click' ability*/
+nav a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 23px;
+  margin: auto;
+  font-size: 32px;
+}
+
+nav .active {
+  color: white;
+}
+/*Giving the middle, border-lines a color and size
+.navigation li:not(:first-child){
+	border-left: 2px solid #ecf0f1;
+}*/
+/* footer */
+footer{
+   position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #a3a3a3;
+   color: black;
+   text-align: center;
+}
+footer a{
+    display:inline;
+    color: black;
+}
+.footer{
+    display: inline;    
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: calc(100% - 143px);
+  width: 150px;
+  position: fixed;
+  z-index: 2;
+  top: 100px;
+  /*left: 148px;*/
+  background-color: #cce0f6;
+  overflow-x: hidden;
+  padding-top: 20px;
+  
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  
+  font-size: 18px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-btn {
+  font-size: 20px;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #B45914;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.sidenav .active {
+  background-color: #6AABF0;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #86c0ff;
+  padding-left: 8px;
+}
+
+.dropdown-container .active {
+  color: white;
+}
+
+/* Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/* makes logo spin when hovering over */
+.logo {
+  transition: transform .7s ease-in-out;
+  width: 100px; 
+  height: 100px;
+}
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+.gearMonke {
+  transition: transform .7s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; 
+  height: 200px;
+}
+.gearMonke:hover {
+  transform: rotate(360deg);
+}
+
+.page {
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 18px;
+  display: inline-block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.pagecontent {
+  width: 60%;
+  margin: 0px auto;
+  text-align: left;
+  line-height: 2em;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  position: fixed;
+  left: 190px;
+}
+
+code {
+  color: #FC6F03;
+  background-color: #C4C4C4;
+  border: 1px solid #727272;
+  padding: 2.5px 5px;
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  display: inline-block;
+  width: auto;
+  line-height: normal;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1194px) {
+  nav, nav ul {
+    height: 80px;
+  }
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+  .sidenav {
+    height: calc(100% - 123px);
+    top: 80px;
+  }
+  nav a {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .sidenav {
+    width: 100px;
+  }
+}
