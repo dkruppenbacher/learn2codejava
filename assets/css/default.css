@@ -180,6 +180,8 @@ h2{
 .pagecontent {
   width: 60%;
   margin: 0px auto;
+  padding-left: auto;
+  padding-right: auto;
   text-align: left;
   line-height: 2em;
 }
