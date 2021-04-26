@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Isaiah Rivera -->
+
 <meta charset=utf-8 />
 <title>Group Project</title>
 <meta name="viewport" content="width=device width,initial-scale=1.0">
@@ -44,6 +44,7 @@
     <a href="#">1.1</a>
     <a href="#">1.2</a>
     <a href="#">1.3</a>
+    <a href="#">Quiz</a>
   </div>
     <button class="dropdown-btn">Chapter 2
     <i class="fa fa-caret-down"></i>
@@ -52,6 +53,7 @@
     <a href="#">2.1</a>
     <a href="#">2.2</a>
     <a href="#">2.3</a>
+    <a href="#">Quiz</a>
   </div>
     <button class="dropdown-btn">Chapter 3
     <i class="fa fa-caret-down"></i>
@@ -60,6 +62,7 @@
     <a href="#">3.1</a>
     <a href="#">3.2</a>
     <a href="#">3.3</a>
+    <a href="#">Quiz</a>
   </div>
     <button class="dropdown-btn">Chapter 4
     <i class="fa fa-caret-down"></i>
@@ -68,6 +71,7 @@
     <a href="#">4.1</a>
     <a href="#">4.2</a>
     <a href="#">4.3</a>
+    <a href="#">Quiz</a>
   </div>
   <button class="dropdown-btn">Chapter 5
     <i class="fa fa-caret-down"></i>
@@ -76,6 +80,7 @@
     <a href="#">5.1</a>
     <a href="#">5.2</a>
     <a href="#">5.3</a>
+    <a href="#">Quiz</a>
   </div>
 </div>
     
@@ -99,7 +104,7 @@ for (i = 0; i < dropdown.length; i++) {
   <p class='breadcrumbs'>Content > Chapter 1 > Quiz</p>
   <h1>Chapter 1 Quiz</h1>
   <div class='pagecontent'>
-   <form>
+   <form name="Quiz1" action="grade_quiz.php">
      Q1: What is a .java file?<br>
      <input type='radio' id='a' name='q1'>
      <label for='a'> A. The file where the code is written.</label><br>
@@ -107,9 +112,40 @@ for (i = 0; i < dropdown.length; i++) {
      <label for='b'> B. A configuration file for the compiler.</label><br>
      <input type='radio' id='c' name='q1'>
      <label for='c'> C. The compiled code.</label><br>
-     <label for='q2'> Q2: What is the proper way to define a main method?</label><br>
+
+     <br><label for='q2'> Q2: What is the proper way to define a main method?</label><br>
      <input type='text' id='q2' name='q2'>
-   <form>
+
+     <br><br>Q3: How can you declare a multiline comment in Java? <br>
+     <input type='radio' id='a' name='q3'>
+     <label for='a'> A. /** (text) */</label><br>
+     <input type='radio' id='b' name='q3'>
+     <label for='b'> B. /* (text) */</label><br>
+     <input type='radio' id='c' name='q3'>
+     <label for='c'> C. // (text)</label><br>
+     <input type='radio' id='d' name='q3'>
+     <label for='d'> D. Both A and B</label><br>
+
+     <br><br>Q4: Which of the following is NOT a JavaDoc comment tag? (Hint: Use the JavaDoc Documentation) <br>
+     <input type='radio' id='a' name='q4'>
+     <label for='a'> A. @since</label><br>
+     <input type='radio' id='b' name='q4'>
+     <label for='b'> B. @param</label><br>
+     <input type='radio' id='c' name='q4'>
+     <label for='c'> C. @name</label><br>
+     <input type='radio' id='d' name='q4'>
+     <label for='d'> D. @author</label><br>
+
+     <br><br>Q5: Which of the following is an example of "Camel Case"? <br>
+     <input type='radio' id='a' name='q5'>
+     <label for='a'> A. camelCase</label><br>
+     <input type='radio' id='b' name='q5'>
+     <label for='b'> B. CamelCase</label><br>
+     <input type='radio' id='c' name='q5'>
+     <label for='c'> C. Camelcase</label><br>
+
+     <br><input type="submit"  name="Submit"  value="Grade Quiz"  />
+   </form>
   </div>
 </div>
     
