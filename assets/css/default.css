@@ -189,8 +189,9 @@ h2{
 
 .breadcrumbs {
   font-size: 14px;
-  position: fixed;
-  left: 190px;
+  float: left;
+  margin-left: 190px;
+  background-color: white;
 }
 
 code {
