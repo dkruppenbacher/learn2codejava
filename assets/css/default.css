@@ -219,6 +219,11 @@ code {
   line-height: normal;
 }
 
+strong {
+  font-size: calc(1em + 2px);
+  text-decoration: underline;
+}
+
 h1 {
   margin-top: 50px;
   font-size: 40px;
