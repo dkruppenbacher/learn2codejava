@@ -43,6 +43,7 @@ nav a {
   padding: 23px;
   margin: auto;
   font-size: 32px;
+  font-size: calc(12px + (32 - 12) * ((100vw - 720px) / (2560 - 720)));
 }
 
 nav .active {
@@ -61,6 +62,10 @@ footer{
    background-color: #a3a3a3;
    color: black;
    text-align: center;
+   font-size: 16px;
+   font-size: calc(10px + (18 - 10) * ((100vw - 720px) / (2560 - 720)));
+   line-height: 24px;
+   line-height: calc(18px + (26 - 18) * ((100vw - 720px) / (2560 - 720)));
 }
 footer a{
     display:inline;
@@ -94,7 +99,8 @@ h2{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   
-  font-size: 18px;
+  font-size: 20px;
+  font-size: calc(14px + (22 - 14) * ((100vw - 720px) / (2560 - 720)));
   color: black;
   display: block;
   border: none;
@@ -107,6 +113,7 @@ h2{
 
 .dropdown-btn {
   font-size: 20px;
+  font-size: calc(14px + (22 - 14) * ((100vw - 720px) / (2560 - 720)));
 }
 
 /* On mouse-over */
@@ -118,6 +125,7 @@ h2{
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
+  font-size: calc(14px + (22 - 14) * ((100vw - 720px) / (2560 - 720)));
   padding: 0px 10px;
 }
 
@@ -169,6 +177,7 @@ h2{
   width: 100%;
   font-family: 'Roboto';
   font-size: 18px;
+  font-size: calc(12px + (20 - 12) * ((100vw - 720px) / (2560 - 720)));
   display: inline-block;
   float: right;
   margin-left: auto;
@@ -189,6 +198,7 @@ h2{
 
 .breadcrumbs {
   font-size: 14px;
+  font-size: calc(8px + (14 - 8) * ((100vw - 720px) / (2560 - 720)));
   float: left;
   margin-left: 190px;
   background-color: white;
@@ -201,7 +211,8 @@ code {
   padding: 2.5px 5px;
   font-family: 'Roboto Mono';
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
+  font-size: calc(12px + (20 - 12) * ((100vw - 720px) / (2560 - 720)));
   text-align: left;
   display: inline-block;
   width: auto;
@@ -210,6 +221,8 @@ code {
 
 h1 {
   margin-top: 50px;
+  font-size: 40px;
+  font-size: calc(26px + (42 - 26) * ((100vw - 720px) / (2560 - 720)));
 }
 
 @media only screen and (max-width: 1194px) {
