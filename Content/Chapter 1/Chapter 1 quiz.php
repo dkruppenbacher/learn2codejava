@@ -20,7 +20,7 @@
 ?>
 <!-- sideNav-normal.php end -->
   <div class='pagecontent'>
-   <form name="Quiz1" action="grade_quiz_1.php" method="POST">
+   <form name="Quiz1" action="<?php echo $path; ?>results/grade_quiz_1.php" method="POST">
      Q1: What is a .java file?<br>
      <input type='radio' value ='a' id='a' name='q1' required>
      <label for='a'> A. The file where the code is written.</label><br>

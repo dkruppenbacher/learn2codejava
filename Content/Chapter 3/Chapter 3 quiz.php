@@ -20,7 +20,7 @@
 ?>
 <!-- sideNav-normal.php end -->
   <div class='pagecontent'>
-   <form name="Quiz1" action="grade_quiz_3.php" method="POST">
+   <form name="Quiz1" action="<?php echo $path; ?>results/grade_quiz_3.php" method="POST">
      Q1: What does an if statement do?<br>
      <input type='radio' value ='a' id='a' name='q1' required>
      <label for='a'> A. Check if boolean expression is true.</label><br>
