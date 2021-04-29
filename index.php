@@ -3,6 +3,8 @@
   $page = "Home";
   $pagetype = "home";
   $path = './';
+  $mydir1 = dirname(__FILE__);
+  $myd = substr($mydir1, 40);
   include($path.'assets/inc/head-default.php');
 ?>
 <!-- head-normal.php end-->
@@ -47,9 +49,5 @@
   include($path.'assets/inc/footer-default.php');
 ?>
 <!-- footer-normal.php end -->
-   
-    
-    
- </body>
- </html>
+
      

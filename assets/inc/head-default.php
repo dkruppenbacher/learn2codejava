@@ -11,12 +11,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	    $(window).on('load resize',function(){
 	        if($(window).width() < 720){
 	            window.location = "<?php echo $path; ?>mobile/quiz.html" //link to current page but in ../mobile/ folder
 	        }
 	    });
-	</script>
+	</script>-->
 </head>

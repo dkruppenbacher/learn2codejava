@@ -1,6 +1,6 @@
 <div class='sidenav'>
 <?php
-$folderpath = $path."content/";
+$folderpath = $path."Content/";
 
 // CHECKING WHETHER PATH IS A DIRECTORY OR NOT
 if (is_dir($folderpath)) {
@@ -14,7 +14,7 @@ if (is_dir($folderpath)) {
              $i = 0;
              if (strstr($subfolder, ".")) {
               $gfgSubfolder = strval($subfolder);
-              $dirpath = $path."content/" . $subfolder;
+              $dirpath = $path."Content/" . $subfolder;
               $subfolderTrim = substr($gfgSubfolder, 0, -4);
               $part1 = "<button class='sidenav-btn' onclick=";
               $part2 = '"window.location=';
@@ -24,7 +24,7 @@ if (is_dir($folderpath)) {
              else if ($subfolder != '.' && $subfolder != '..') {
                     echo "<button class='dropdown-btn'>".$subfolder."\n<i class='fa fa-caret-down'></i>\n</button>";
                       
-                $dirpath = $path."content/" . $subfolder . "/";
+                $dirpath = $path."Content/" . $subfolder . "/";
                     // GETING INSIDE EACH SUBFOLDERS
                     if (is_dir($dirpath)) {
                         $file = opendir($dirpath); {
@@ -71,3 +71,9 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script> 
+
+<?php
+  echo "<div class='page'>";
+  echo "<p class='breadcrumbs'>".$myd," > ".$page."</p>";
+  echo "<h1>".$page."</h1>";
+?>

@@ -2,7 +2,7 @@
 <?php
   $page = "Quiz 1";
   $pagetype = "content";
-  $path = '../';
+  $path = '../../';
   $mydir1 = dirname(__FILE__);
   $myd = substr($mydir1, 40);
   include($path.'assets/inc/head-default.php');
@@ -19,11 +19,8 @@
   include($path.'assets/inc/sideNav-default.php');
 ?>
 <!-- sideNav-normal.php end -->
-<div class='page'>
-  <p class='breadcrumbs'>Content > Chapter 1 > Quiz</p>
-  <h1>Chapter 1 Quiz</h1>
   <div class='pagecontent'>
-   <form name="Quiz1" action="grade_quiz.php" method="POST">
+   <form name="Quiz1" action="grade_quiz_1.php" method="POST">
      Q1: What is a .java file?<br>
      <input type='radio' value ='a' id='a' name='q1' required>
      <label for='a'> A. The file where the code is written.</label><br>
@@ -47,13 +44,13 @@
 
      <br><br>Q4: Which of the following is NOT a JavaDoc comment tag? (Hint: Use the JavaDoc Documentation) <br>
      <input type='radio' value ='a' id='a' name='q4' required>
-     <label for='a'> A. @since</label><br>
+     <label for='a'> A. <code>@since</code></label><br>
      <input type='radio' value ='b' id='b' name='q4'>
-     <label for='b'> B. @name</label><br>
+     <label for='b'> B. <code>@name</code></label><br>
      <input type='radio' value ='c' id='c' name='q4'>
-     <label for='c'> C. @param</label><br>
+     <label for='c'> C. <code>@param</code></label><br>
      <input type='radio' value ='d' id='d' name='q4'>
-     <label for='d'> D. @author</label><br>
+     <label for='d'> D. <code>@author</code></label><br>
 
      <br><br>Q5: Which of the following is an example of "Camel Case"? <br>
      <input type='radio' value ='a' id='a' name='q5' required>
