@@ -1,49 +1,50 @@
-   <div class="sidenav">
-    <button class="dropdown-btn">Chapter 1
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="<?php echo $path; ?>content.html">1.1</a>
-    <a href="<?php echo $path; ?>#">1.2</a>
-    <a href="<?php echo $path; ?>#">1.3</a>
-    <a href="<?php echo $path; ?>#">Quiz</a>
-  </div>
-    <button class="dropdown-btn">Chapter 2
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="<?php echo $path; ?>#">2.1</a>
-    <a href="<?php echo $path; ?>#">2.2</a>
-    <a href="<?php echo $path; ?>#">2.3</a>
-    <a href="<?php echo $path; ?>#">Quiz</a>
-  </div>
-    <button class="dropdown-btn">Chapter 3
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="<?php echo $path; ?>#">3.1</a>
-    <a href="<?php echo $path; ?>#">3.2</a>
-    <a href="<?php echo $path; ?>#">3.3</a>
-    <a href="<?php echo $path; ?>#">Quiz</a>
-  </div>
-    <button class="dropdown-btn">Chapter 4
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="<?php echo $path; ?>#">4.1</a>
-    <a href="<?php echo $path; ?>#">4.2</a>
-    <a href="<?php echo $path; ?>#">4.3</a>
-    <a href="<?php echo $path; ?>#">Quiz</a>
-  </div>
-  <button class="dropdown-btn">Chapter 5
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="<?php echo $path; ?>#">5.1</a>
-    <a href="<?php echo $path; ?>#">5.2</a>
-    <a href="<?php echo $path; ?>#">5.3</a>
-    <a href="<?php echo $path; ?>#">Quiz</a>
-  </div>
+<div class='sidenav'>
+<?php
+$folderpath = $path."content/";
+
+// CHECKING WHETHER PATH IS A DIRECTORY OR NOT
+if (is_dir($folderpath)) {
+    // GETING INTO DIRECTORY
+    $files = opendir($folderpath); {
+        // CHECKING FOR SMOOTH OPENING OF DIRECTORY
+        if ($files) {
+            //READING NAMES OF EACH ELEMENT INSIDE THE DIRECTORY 
+            while (($subfolder = readdir($files)) !== FALSE) {
+                // CHECKING FOR FILENAME ERRORS
+             $i = 0;
+             if ($subfolder != '.' && $subfolder != '..') {
+                    echo "<button class='dropdown-btn'>".$subfolder."\n<i class='fa fa-caret-down'></i>\n</button>";
+                      
+                $dirpath = $path."content/" . $subfolder . "/";
+                    // GETING INSIDE EACH SUBFOLDERS
+                    if (is_dir($dirpath)) {
+                        $file = opendir($dirpath); {
+                            if ($file) {
+                //READING NAMES OF EACH FILE INSIDE SUBFOLDERS
+               while (($filename = readdir($file)) !== FALSE) {
+                if ($filename != '.' && $filename != '..') {
+                        $gfgFilename = strval($filename);
+                        $filenameTrim = substr($gfgFilename, 0, -4);
+                        if ($i == 0) {
+                          echo "\n<div class='dropdown-container'>";
+                          $i = 1;
+                        }
+                        echo "<a href='".$dirpath."".$gfgFilename."''>".$filenameTrim."</a>\n";
+                           }
+                         }
+                      }
+                   }
+               }
+                    if ($i == 1) {
+                      echo "</div>";
+                    }
+                  }
+                }
+            }
+        }
+    }
+
+?>
 </div>
 <script> 
 var dropdown = document.getElementsByClassName("dropdown-btn");

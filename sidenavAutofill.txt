@@ -1,4 +1,4 @@
-for (folderInContent) {
+for (subfolder) {
 	"<button class='dropdown-btn'>-subfoldername-\n<i class="fa fa-caret-down"></i>\n</button>";
 	$i = 0;
 	for (fileInSubfolder) {

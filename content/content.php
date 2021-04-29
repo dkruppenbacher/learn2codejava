@@ -9,7 +9,6 @@
   include($path.'assets/inc/nav-content-default.php');
   include($path.'assets/inc/sideNav-default.php');
 ?>
-
 <div class='page'>
   <p class='breadcrumbs'>Content > Chapter 1 > 1.1 Intro to Java</p>
   <h1>Introduction to Java</h1>
