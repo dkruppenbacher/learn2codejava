@@ -1,7 +1,60 @@
+:root {
+  color-scheme: light dark; /* both supported */
+    --text-color: #222;
+    --background-color: #fff;
+    --link-color: #809fff;
+    --code-background-color: #C4C4C4;
+    --font-weight: 400;
+}
+
+body {
+    --text-color: #222;
+    --background-color: #fff;
+    --link-color: #809fff;
+    --code-background-color: #C4C4C4;
+    --font-weight: 400;
+}
+
+body.light-mode {
+    --text-color: #222;
+    --background-color: #fff;
+    --link-color: #809fff;
+    --code-background-color: #C4C4C4;
+    --font-weight: 400;
+}
+
+body.dark-theme {
+    --text-color: #eee;
+    --background-color: #121212;
+    --link-color: #809fff;
+    --code-background-color: #7a7a7a;
+    --font-weight: 300;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body { 
+    --text-color: #eee;
+    --background-color: #121212;
+    --link-color: #809fff;
+    --code-background-color: #7a7a7a;
+    --font-weight: 300;
+  }
+  /* Override dark mode with light mode styles if the user decides to swap */
+  body.light-theme {
+    --text-color: #222;
+    --background-color: #fff;
+    --link-color: #809fff;
+    --code-background-color: #C4C4C4;
+    --font-weight: 400;
+  }
+}
+
 body{
     font-family: 'Coda';
     margin: 0px;
-    
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 nav {
   width: 100%;
@@ -83,7 +136,7 @@ h2{
 /* Fixed sidenav, full height */
 .sidenav {
   height: calc(100% - 142.5px);
-  width: 150px;
+  width: 7%;
   position: fixed;
   z-index: 2;
   top: 100px;
@@ -96,9 +149,10 @@ h2{
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn, .sidenav-btn {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 6px;
   text-decoration: none;
-  
+  text-align: center;
+  margin: auto;
   font-size: 20px;
   font-size: calc(14px + (22 - 14) * ((100vw - 720px) / (2560 - 720)));
   color: black;
@@ -140,6 +194,12 @@ h2{
   display: none;
   background-color: #86c0ff;
   padding-left: 8px;
+  padding-right: 5px;
+  overflow-wrap: break-word;
+}
+
+.dropdown-container a {
+  margin-right: 2px;
 }
 
 .dropdown-container .active {
@@ -176,6 +236,7 @@ h2{
 .page {
   width: 100%;
   font-family: 'Roboto';
+  font-weight: var(--font-weight);
   font-size: 18px;
   font-size: calc(12px + (20 - 12) * ((100vw - 720px) / (2560 - 720)));
   display: inline-block;
@@ -201,12 +262,13 @@ h2{
   font-size: calc(8px + (14 - 8) * ((100vw - 720px) / (2560 - 720)));
   float: left;
   margin-left: 190px;
-  background-color: white;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 code {
   color: #FC6F03;
-  background-color: #C4C4C4;
+  background-color: var(--code-background-color);
   border: 1px solid #727272;
   padding: 2.5px 5px;
   font-family: 'Roboto Mono';
@@ -241,7 +303,11 @@ table, th, td {
   text-align: center;
 }
 
-@media only screen and (max-width: 1194px) {
+a {
+  color: var(--link-color);
+}
+
+@media only screen and (max-width: 1204px) {
   nav, nav ul {
     height: 80px;
   }
@@ -253,9 +319,10 @@ table, th, td {
     height: calc(100% - 123px);
     top: 80px;
   }
-  nav a {
-    padding: 15px;
-  }
+
+  .sidenav a, .dropdown-btn, .sidenav-btn {
+  padding: 6px 8px 6px 6px;
+}
 }
 
 @media only screen and (max-width: 834px) {
@@ -263,3 +330,4 @@ table, th, td {
     width: 100px;
   }
 }
+
