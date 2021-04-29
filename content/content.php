@@ -51,7 +51,7 @@
 </div>
 <!-- footer-normal.php start -->
 <?php
-  include($path.'assets/inc/footer.php');
+  include($path.'assets/inc/footer-default.php');
 ?>
 <!-- footer-normal.php end-->
  </body>
