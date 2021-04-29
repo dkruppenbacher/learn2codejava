@@ -1,7 +1,7 @@
 <?php
   $page = "Lesson 1.1";
   $pagetype = "content";
-  $path = '../';
+  $path = "../";
   include($path.'assets/inc/head-default.php');
 ?>
 <body>

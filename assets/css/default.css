@@ -95,7 +95,7 @@ h2{
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav a, .dropdown-btn, .sidenav-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   
@@ -111,7 +111,7 @@ h2{
   outline: none;
 }
 
-.dropdown-btn {
+.dropdown-btn, .sidenav-btn {
   font-size: 20px;
   font-size: calc(14px + (22 - 14) * ((100vw - 720px) / (2560 - 720)));
 }

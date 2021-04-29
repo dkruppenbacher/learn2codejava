@@ -12,7 +12,16 @@ if (is_dir($folderpath)) {
             while (($subfolder = readdir($files)) !== FALSE) {
                 // CHECKING FOR FILENAME ERRORS
              $i = 0;
-             if ($subfolder != '.' && $subfolder != '..') {
+             if (strstr($subfolder, ".")) {
+              $gfgSubfolder = strval($subfolder);
+              $dirpath = $path."content/" . $subfolder;
+              $subfolderTrim = substr($gfgSubfolder, 0, -4);
+              $part1 = "<button class='sidenav-btn' onclick=";
+              $part2 = '"window.location=';
+              $part3 = ';"';
+              echo $part1."".$part2."'".$dirpath."'".$part3.">".$subfolderTrim."</button>";
+             }
+             else if ($subfolder != '.' && $subfolder != '..') {
                     echo "<button class='dropdown-btn'>".$subfolder."\n<i class='fa fa-caret-down'></i>\n</button>";
                       
                 $dirpath = $path."content/" . $subfolder . "/";
