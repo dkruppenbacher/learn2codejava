@@ -1,6 +1,6 @@
 <footer>       
     <button class="btn-toggle">Toggle Dark Mode</button>
-    <p class="footer"> @2021 GearMonke Inc.&emsp;&emsp;<a href="mailto:info@learn2codejava.com">Contact: info@learn2codejava.com</a>&emsp;&emsp;<a href="#">Donate</a></p>
+    <p class="footer">&emsp;&emsp;@2021 GearMonke Inc.&emsp;&emsp;<a href="mailto:info@learn2codejava.com">Contact: info@learn2codejava.com</a>&emsp;&emsp;<a href="#">Donate</a></p>
 </footer>
 	<script>
   const btn = document.querySelector(".btn-toggle");
@@ -14,7 +14,7 @@
       document.body.classList.toggle("dark-mode");
       var theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
     }
-    document.cookie = "theme=" + theme+"; path=/";
+    document.cookie = "theme=" + theme+"; path=/; SameSite=lax";
   });
 </script>
  </body>

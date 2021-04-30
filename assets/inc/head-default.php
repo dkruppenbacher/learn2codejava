@@ -15,6 +15,7 @@ if (!empty($_COOKIE['theme'])) {
 <head>
 	<meta charset=utf-8 />
 	<title>Learn2CodeJava <?php echo $page;?></title> <!--set this based on page content-->
+	<link rel="shortcut icon" type="image/svg" href="<?php echo $path; ?>assets/img/gearmonke_icon.svg"/>
 	<meta name="viewport" content="width=device width,initial-scale=1.0">
 	<meta name="color-scheme" content="dark light">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
