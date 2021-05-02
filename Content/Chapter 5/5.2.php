@@ -31,7 +31,12 @@
         <li>Character = char</li>
         <li>Boolean = boolean</li>
     </ul>
-    <p>Both arrays and ArrayLists can be used with for loops. Lesson 5.3 will take you through examples of these structures using loops.</p>
+    <p>Both arrays and ArrayLists can be used with for loops. For example, if you wanted to print out all the items in the ArrayList 'list', then you would do the following:</p>
+    <code>
+        for(int count = 0; count &lt; list.size(); count++) {<br>
+        &emsp;&emsp;System.out.println(list.get(i)); <br>
+        }  
+    </code>
   </div>
 </div>
 <!-- footer-normal.php start -->
