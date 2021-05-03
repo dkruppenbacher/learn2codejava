@@ -307,6 +307,83 @@ a {
   color: var(--link-color);
 }
 
+/* AboutPage CSS*/
+ .head{
+        margin-top: 100px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .center{
+        display: flex;
+        align-items: center;
+            justify-content: center;
+    }
+    .Contain{
+        position: relative;
+        width: 1000px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .Contain .card{
+        position: relative;
+        max-width: 450px;
+        background: #86c0ff;
+        margin: 10px;
+        padding: 15px;
+        display: flex;
+    }
+    .Contain .card .imgBx{
+        width: 150px;
+        flex: 0 0 150px;
+    }
+    .Contain .card .imgBx img {
+        max-width: 100%;
+    }
+    .Contain .card .content{
+        margin-left: 20px;
+    }
+    
+    @media (max-width: 991px){    
+        .Contain{
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 768px){    
+        .Contain{
+            flex-direction: column;
+        }
+        .Contain .card{
+            flex-direction: column;
+            max-width: 350px;
+        }
+        .Contain .card .imgBx{
+            max-width: 100%;
+        }
+        .Contain .card .content{
+            margin-left: 0px;
+        }
+    }
+   /* end of about*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1204px) {
   nav, nav ul {
     height: 80px;
