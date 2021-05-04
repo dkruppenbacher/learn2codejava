@@ -1,6 +1,6 @@
 <!-- head-normal.php start -->
 <?php
-  $page = "Quiz 5 Results";
+  $page = "Quiz 4 Results";
   $pagetype = "content";
   $path = '../';
   $mydir1 = dirname(__FILE__);
@@ -34,7 +34,7 @@
         switch($q1) {
             case 'a':
                 $is1Correct = false;
-                $reason1 = "This answer is NOT correct! Importing java.io.*; is used for file writing and reading.";
+                $reason1 = "This answer is NOT correct! This instantiation is missing the continuation statement.";
                 break;
             case 'b':
                 $is1Correct = true;
@@ -42,35 +42,36 @@
                 break;
             case 'c':
                 $is1Correct = false;
-                $reason1 = "This answer is NOT correct! It is missing the 'import' statement";
+                $reason1 = "This answer is NOT correct! The instantiation is missing the initialization statement";
                 break;  
             case 'd':
                 $is2Correct = false;
-                $reason1 = "This answer is NOT correct! It is missing the 'import' statement, and it imported java.io.*; which is used for file reading and writing";
+                $reason1 = "This answer is NOT correct! It will only loop through 9 times when i = 1 and i < 10.";
             default:
                 $is1Correct = false;
                 $reason1 = "No answer selected.";
         }
 
         //q2
-        if(is_null($q2)) {
-           $is2Correct = false;
-           $reason2 = "No answer input."; 
-        } else {
-            if($q2 == "ArrayList<String>() items = new ArrayList<String>();") {
-                $is2Correct = true;
-                $reason2 = "This answer is correct!"; 
-            } else {
+        switch($q2) {
+            case 'a':
                 $is2Correct = false;
-                $reason2 = "This answer is NOT correct! The correct answer is <code>ArrayList&lt;String&gt;() items = new ArrayList&lt;String&gt;()</code>"; 
-            }
+                $reason2 = "This answer is NOT correct. Infinite loops occur when the boolean is stuck at true.";
+                break;
+            case 'b':
+                $is2Correct = true;
+                $reason2 = "This answer is correct!.";
+                break;       
+            default:
+                $is2Correct = false;
+                $reason2 = "No answer selected.";
         }
 
         //q3
         switch($q3) {
             case 'a':
                 $is3Correct = false;
-                $reason3 = "This answer is NOT correct. Arrays cannot grow or shrink in size after they are instantiated.";
+                $reason3 = "This answer is NOT correct. Do-while loops must loop through at least once because the boolean is not tested until after the loop is executed once.";
                 break;
             case 'b':
                 $is3Correct = true;
@@ -85,11 +86,11 @@
         switch($q4) {
             case 'a':
                 $is4Correct = false;
-                $reason4 = "This answer is NOT correct. list.get(n) is a method used to access a specific index.";
+                $reason4 = "This answer is NOT correct. Input Validation loops are a type of while loop.";
                 break;
             case 'b':
                 $is4Correct = false;
-                $reason4 = "This answer is NOT correct. list.set(n) is used to change a value at a specific index.";
+                $reason4 = "This answer is NOT correct. Counting loops are a type of while loop.";
                 break;
             case 'c':
                 $is4Correct = true;
@@ -97,7 +98,7 @@
                 break;
             case 'd':
                 $is4Correct = false;
-                $reason4 = "This answer is NOT correct! list.add(item) is used to add an item to the list.";
+                $reason4 = "This answer is NOT correct! Sentinel loops are a type of while loops.";
                 break;        
             default:
                 $is4Correct = false;
@@ -107,16 +108,16 @@
         //q1
         switch($q5) {
             case 'a':
-                $is5Correct = true;
-                $reason5 = "This answer is correct!";
+                $is5Correct = false;
+                $reason5 = "This answer is NOT correct! The inner loop is executed each time the program loops through the outer loop.";
                 break;
             case 'b':
                 $is5Correct = false;
-                $reason5 = "This answer is NOT correct! The index ALWAYS starts at 0.";
+                $reason5 = "This answer is NOT correct! The inner loop is executed each time the program loops through the outer loop.";
                 break;
             case 'c':
-                $is5Correct = false;
-                $reason5 = "This answer is NOT correct! The index ALWAYS starts at 0, it cannot vary or be changed.";
+                $is5Correct = true;
+                $reason5 = "This answer is correct!";
                 break;  
             default:
                 $is5Correct = false;
