@@ -5,6 +5,8 @@
     --link-color: #809fff;
     --code-background-color: #C4C4C4;
     --font-weight: 400;
+    --hidden-color: #7a7a7a;
+    --table-border: black;
 }
 
 body {
@@ -13,6 +15,8 @@ body {
     --link-color: #809fff;
     --code-background-color: #C4C4C4;
     --font-weight: 400;
+    --hidden-color: #7a7a7a;
+    --table-border: black;
 }
 
 body.light-mode {
@@ -21,6 +25,8 @@ body.light-mode {
     --link-color: #809fff;
     --code-background-color: #C4C4C4;
     --font-weight: 400;
+    --hidden-color: #7a7a7a;
+    --table-border: black;
 }
 
 body.dark-theme {
@@ -29,6 +35,8 @@ body.dark-theme {
     --link-color: #809fff;
     --code-background-color: #7a7a7a;
     --font-weight: 300;
+    --hidden-color: #C4C4C4;
+    --table-border: #7a7a7a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,6 +47,8 @@ body.dark-theme {
     --link-color: #809fff;
     --code-background-color: #7a7a7a;
     --font-weight: 300;
+    --hidden-color: #C4C4C4;
+    --table-border: #7a7a7a;
   }
   /* Override dark mode with light mode styles if the user decides to swap */
   body.light-theme {
@@ -47,6 +57,8 @@ body.dark-theme {
     --link-color: #809fff;
     --code-background-color: #C4C4C4;
     --font-weight: 400;
+    --hidden-color: #7a7a7a;
+    --table-border: black;
   }
 }
 
@@ -293,12 +305,12 @@ h1 {
 }
 
 .hidden {
-  border: 0px solid black;
-  background-color: #7a7a7a;
+  border: 0px solid var(--table-border);
+  background-color: var(--hidden-color);
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid var(--table-border);
   border-collapse: collapse;
   text-align: center;
 }
