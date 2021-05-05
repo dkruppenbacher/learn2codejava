@@ -33,16 +33,16 @@
         //q1
         switch($q1) {
             case 'a':
-                $is1Correct = true;
-                $reason1 = "This answer is correct!";
+                $is1Correct = false;
+                $reason1 = "This answer is NOT correct! Review the descriptions of classes, objects and methods.";
                 break;
             case 'b':
                 $is1Correct = false;
-                $reason1 = "This answer is NOT correct! Each compiler has its own methods of storing settings.";
+                $reason1 = "This answer is NOT correct! An object does not describe the class.";
                 break;
             case 'c':
-                $is1Correct = false;
-                $reason1 = "This answer is NOT correct! .class files contain the compiled code.";
+                $is1Correct = true;
+                $reason1 = "This answer is correct!";
                 break;  
             default:
                 $is1Correct = false;
@@ -54,12 +54,12 @@
            $is2Correct = false;
            $reason2 = "No answer input."; 
         } else {
-            if($q2 == "public static void main(String[] args)") {
+            if($q2 == "Scanner scn = new Scanner(System.in)") {
                 $is2Correct = true;
                 $reason2 = "This answer is correct!"; 
             } else {
                 $is2Correct = false;
-                $reason2 = "This answer is NOT correct! The correct answer is <code>public static void main(String[] args)</code>."; 
+                $reason2 = "This answer is NOT correct! The correct answer is <code>Scanner scn = new Scanner(System.in)</code>."; 
             }
         }
 
@@ -67,19 +67,19 @@
         switch($q3) {
             case 'a':
                 $is3Correct = false;
-                $reason3 = "This answer is partially correct, but there are multiple right answers.";
+                $reason3 = "This answer is NOT correct! scn.next() only takes the next group of characters.";
                 break;
             case 'b':
                 $is3Correct = false;
-                $reason3 = "This answer is partially correct, but there are multiple right answers.";
+                $reason3 = "This answer is NOT correct! scn.nextDouble() only takes doubles.";
                 break;
             case 'c':
-                $is3Correct = false;
-                $reason3 = "This answer is NOT correct! '//' signifies a single line comment.";
-                break;
-            case 'd':
                 $is3Correct = true;
                 $reason3 = "This answer is correct!";
+                break;
+            case 'd':
+                $is3Correct = false;
+                $reason3 = "This answer is NOT correct! scn.nextInt() only takes ints.";
                 break;        
             default:
                 $is3Correct = false;
@@ -90,19 +90,19 @@
         switch($q4) {
             case 'a':
                 $is4Correct = false;
-                $reason4 = "This answer is NOT correct. <code>@since</code> is used for version control.";
+                $reason4 = "This answer is NOT correct. Boolean is primitive.";
                 break;
             case 'b':
-                $is4Correct = true;
-                $reason4 = "This answer is correct!";
+                $is4Correct = false;
+                $reason4 = "This answer is NOT correct! Int is primitive.";
                 break;
             case 'c':
                 $is4Correct = false;
-                $reason4 = "This answer is NOT correct! <code>@param</code> is used to declare parameters of a method.";
+                $reason4 = "This answer is NOT correct! Char is primitive";
                 break;
             case 'd':
-                $is4Correct = false;
-                $reason4 = "This answer is NOT correct! <code>@author</code> is used to declare the name of the person who wrote a program.";
+                $is4Correct = true;
+                $reason4 = "This answer is correct!";
                 break;        
             default:
                 $is4Correct = false;
@@ -112,16 +112,16 @@
         //q1
         switch($q5) {
             case 'a':
+                $is5Correct = false;
+                $reason5 = "This answer is NOT correct! The 4.0 comes before the letter";
+                break;
+            case 'b':
                 $is5Correct = true;
                 $reason5 = "This answer is correct!";
                 break;
-            case 'b':
-                $is5Correct = false;
-                $reason5 = "This answer is NOT correct! In camelCase, the first word is not capitalized, but each proceeding word is.";
-                break;
             case 'c':
                 $is5Correct = false;
-                $reason5 = "This answer is NOT correct! In camelCase, the first word is not capitalized, but each proceeding word is.";
+                $reason5 = "This answer is NOT correct! You cannot have a decimal place with a decimal(int) declaration.";
                 break;  
             default:
                 $is5Correct = false;
