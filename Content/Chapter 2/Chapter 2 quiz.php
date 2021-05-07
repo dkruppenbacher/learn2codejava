@@ -32,7 +32,7 @@
      <br><label for='q2'> Q2: What is the proper way to instantiate a Scanner object?</label><br>
      <input type='text' id='q2' name='q2' required>
 
-     <br><br>Q3: How can you read a line of input? <br>
+     <br><br>Q3: How can you read a full line of input? <br>
      <input type='radio' value ='a' id='a' name='q3' required>
      <label for='a'> A. scn.next()</label><br>
      <input type='radio' value ='b' id='b' name='q3'>
