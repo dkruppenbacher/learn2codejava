@@ -67,6 +67,7 @@ body{
     margin: 0px;
     color: var(--text-color);
     background-color: var(--background-color);
+    transition: color 1.5s, background-color 1.5s;
 }
 nav {
   width: 100%;
@@ -258,6 +259,7 @@ h2{
   padding-top: 110px;
   padding-bottom: 110px;
   text-align: center;
+  transition: font-weight 1.5s;
 }
 
 .pagecontent {
@@ -273,9 +275,10 @@ h2{
   font-size: 14px;
   font-size: calc(8px + (14 - 8) * ((100vw - 720px) / (2560 - 720)));
   float: left;
-  margin-left: 190px;
+  margin-left: 210px;
   color: var(--text-color);
   background-color: var(--background-color);
+  transition: color 1.5s, background-color 1.5s;
 }
 
 code {
@@ -291,6 +294,7 @@ code {
   display: inline-block;
   width: auto;
   line-height: normal;
+  transition: background-color 1.5s;
 }
 
 strong {
@@ -307,16 +311,19 @@ h1 {
 .hidden {
   border: 0px solid var(--table-border);
   background-color: var(--hidden-color);
+  transition: border 1.5s, background-color 1.5s;
 }
 
 table, th, td {
   border: 1px solid var(--table-border);
   border-collapse: collapse;
   text-align: center;
+  transition: border 1.5s;
 }
 
 a {
   color: var(--link-color);
+  transition: color 1.5s;
 }
 
 /* AboutPage CSS*/

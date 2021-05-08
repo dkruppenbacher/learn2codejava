@@ -1,7 +1,7 @@
 <?php
   $page = "Lesson 1.1";
   $pagetype = "content";
-  $path = "../";
+  $path = "./";
   $mydir1 = dirname(__FILE__);
   $myd = substr($mydir1, 40);
   include($path.'assets/inc/head-default.php');
