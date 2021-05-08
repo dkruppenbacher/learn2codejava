@@ -75,3 +75,9 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script> 
+
+<?php
+  echo "<div class='page'>";
+  echo "<p class='breadcrumbs'>".$myd," > ".$page."</p>";
+  echo "<h1>".$page."</h1>";
+?>
