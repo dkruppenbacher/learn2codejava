@@ -3,7 +3,7 @@
   $pagetype = "content";
   $path = "../../";
   $mydir1 = dirname(__FILE__);
-  $myd = substr($mydir1, 40);
+  $myd = substr($mydir1, 38);
   include($path.'assets/inc/head-default.php');
 ?>
 <body>
@@ -16,7 +16,7 @@
       <p><strong>Important ideas:</strong></p>
       <ul>
         <li>Binary files are structured, so you can't just read all the binary data in and process it. You need to be specific about what type of data is being read in.</li>
-        <li>For exanple, if you knew a binary file's data was structured (int, int, double, float, String, String, int) Java would have no idea what to do with that if it was brought in on its own. Luckily, there are methods in Java.io.* that help us deal with this type of data.</li>
+        <li>For example, if you knew a binary file's data was structured (int, int, double, float, String, String, int) Java would have no idea what to do with that if it was brought in on its own. Luckily, there are methods in Java.io.* that help us deal with this type of data.</li>
       </ul>
       <p>Let's take this bit of data as an example</p>
       <code>

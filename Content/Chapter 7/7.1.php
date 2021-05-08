@@ -3,7 +3,7 @@
   $pagetype = "content";
   $path = "../../";
   $mydir1 = dirname(__FILE__);
-  $myd = substr($mydir1, 40);
+  $myd = substr($mydir1, 38);
   include($path.'assets/inc/head-default.php');
 ?>
 <body>
@@ -17,7 +17,7 @@
       <ul>
         <li>Plain Text Files: These files contain human readable text. They're typically accompanied by the .txt extension and can be opened, edited, and saved by almost all text editors.</li>
         <li>Separated Value Files: These files typically contain data that has been separated by certain characters. Typically either a set of commas or semicolons are used to separate this data. These files are still human readable and can be opened by most text editors. They typically have the extension of .csv.</li>
-        <li>Binary Files: These files are near imposible for humans to read as they contain binary data. Some text editors will do a better job at displaying binary data than others. There is very little overhead involved when processing binary files, so they are recommended for any large data sets.</li>
+        <li>Binary Files: These files are near impossible for humans to read as they contain binary data. Some text editors will do a better job at displaying binary data than others. There is very little overhead involved when processing binary files, so they are recommended for any large data sets.</li>
       </ul>
       <p>Let's start with the basics of input/output</p>
       <code>
@@ -79,7 +79,7 @@
       </code><br>
       <p>Let's break that down, line by line.</p>
       <ul>
-        <li>The first two lines, we import <code>java.utils.*</code> and <code>java.io.*</code>. Utils contains the scanner class. IO contains the nesseary classes to read and write files <code>(File, FileWriter, FileReader, and PrintWriter)</code>.</li>
+        <li>The first two lines, we import <code>java.util.*</code> and <code>java.io.*</code>. Util contains the scanner class. IO contains the necessary classes to read and write files <code>(File, FileWriter, FileReader, and PrintWriter)</code>.</li>
         <li>The class name is an example and we are working withing a MAIN method.</li>
         <li>In the main method, we first define the file we want to INPUT. We then define the file we want to OUTPUT to (the output file is not required to exist for java to output to it).</li>
         <li>When dealing with files, we need to use try/catch statements. If a file does not exists or Java cannot access the file, we want it to fail gracefully.</li>
