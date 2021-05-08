@@ -59,6 +59,7 @@
   </div>
   <button class='sidenav-btn' onclick="window.location='<?php echo $path; ?>Content/Project 1.php'">Project 1</button>
   <button class='sidenav-btn' onclick="window.location='<?php echo $path; ?>Content/Project 2.php'">Project 2</button>
+  <button class='sidenav-btn' onclick="window.location='<?php echo $path; ?>Content/Project 3.php'">Project 3</button>
 </div>
 <script> 
 var dropdown = document.getElementsByClassName("dropdown-btn");

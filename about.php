@@ -1,6 +1,6 @@
 <!-- head-normal.php start -->
 <?php
-  $page = "Home";
+  $page = "aboutus";
   $pagetype = "home";
   $path = './';
   $mydir1 = dirname(__FILE__);
