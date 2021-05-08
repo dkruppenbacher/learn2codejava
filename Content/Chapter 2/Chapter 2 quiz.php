@@ -56,7 +56,7 @@
      <input type='radio' value ='a' id='a' name='q5' required>
      <label for='a'> A. <code>%s,4.0</code></label><br>
      <input type='radio' value ='b' id='b' name='q5'>
-     <label for='b'> B. <code>%1.5f</label><br>
+     <label for='b'> B. <code>%1.5f</code></label><br>
      <input type='radio' value ='c' id='c' name='q5'>
      <label for='c'> C. <code>%3.2d</code></label><br>
 
