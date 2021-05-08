@@ -1,6 +1,6 @@
 <!-- head-normal.php start -->
 <?php
-  $page = "Home";
+  $page = "aboutus";
   $pagetype = "home";
   $path = './';
   $mydir1 = dirname(__FILE__);
@@ -54,9 +54,12 @@
             </div>
         </div>
         <div class="card">
+            <div class="imgBx">
+                <img src="<?php echo $path; ?>assets/img/nate.png" alt="Nathaniel P.">
+            </div>
             <div class="content">
                 <h3>Graphic Design - Emma T.</h3>
-                <p>Emma Thomas is a first year Human-Centered Computing major and was the Graphic designer for Gearmonke. She provided a color scheme that has a welcoming and intuitive feel, she made a logo for our site, and also provided content for chapters on our site.</p>
+                <p>Emma Thomas is a first year Human-Centered Computing major at RIT and was the Graphic designer for Gearmonke. On campus, she is a member of the Womens's Swim Team and the Honor's college.</p>
             </div>
         </div>
         <div class="card">
