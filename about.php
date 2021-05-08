@@ -45,6 +45,9 @@
             </div>
         </div>
         <div class="card">
+            <div class="imgBx">
+                <img src="<?php echo $path; ?>assets/img/nate.png" alt="Nathaniel P.">
+            </div>
             <div class="content">
                 <h3>Information Architect - Nathaniel P.</h3>
                 <p>Nathaniel Pellegrino is a second year CIT student and was the Information Architect for Gearmonke. Nate provided mobile and web views of what the site would look like and how it should be laid out. He also helped with providing content and quizzes for each page making it easy to read and learn. </p>
