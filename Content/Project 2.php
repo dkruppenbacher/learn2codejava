@@ -1,9 +1,9 @@
 <?php
-  $page = "Project 1: Simple Calculator";
+  $page = "Project 2: Simple Calculator with Error Checking";
   $pagetype = "content";
   $path = "../";
   $mydir1 = dirname(__FILE__);
-  $myd = substr($mydir1, 40);
+  $myd = substr($mydir1, 38);
   include($path.'assets/inc/head-default.php');
 ?>
 <body>
