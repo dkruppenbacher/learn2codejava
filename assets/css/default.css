@@ -273,7 +273,7 @@ h2{
   font-size: 14px;
   font-size: calc(8px + (14 - 8) * ((100vw - 720px) / (2560 - 720)));
   float: left;
-  margin-left: 190px;
+  margin-left: 210px;
   color: var(--text-color);
   background-color: var(--background-color);
 }
