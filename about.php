@@ -55,7 +55,7 @@
         </div>
         <div class="card">
             <div class="imgBx">
-                <img src="<?php echo $path; ?>assets/img/nate.png" alt="Nathaniel P.">
+                <img src="<?php echo $path; ?>assets/img/emma.jpg" alt="Emma T.">
             </div>
             <div class="content">
                 <h3>Graphic Design - Emma T.</h3>
