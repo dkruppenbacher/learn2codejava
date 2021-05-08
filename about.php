@@ -16,7 +16,8 @@
 <!-- nav-home-normal.php end -->
 <div class="head">
     <h2 >About GearMonke</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Learn2CodeJava.com is your one stop shop for all things Java. Whether you are just starting out with the Java programming language, an adept coder, or an expert developer, Learn2CodeJava.com aims to teach you new skills! Throughout the site, you will be immersed in a variety of interactive lessons and projects, all of which will help tune you up to produce beautiful, syntactically correct programs!
+    </p>
 
 <br>
 
@@ -27,7 +28,7 @@
     <div class="Contain">
         <div class="card">
             <div class="imgBx">
-                <img src="<?php echo $path; ?>assets/img/Isaiah_profilePic.jpg" alt="Isaiah Rivera">
+                <img src="<?php echo $path; ?>assets/img/isaiah.jpg" alt="Isaiah Rivera">
             </div>
             <div class="content">
                 <h3>Interactive Designer - Isaiah R.</h3>
@@ -36,38 +37,29 @@
         </div>
         <div class="card">
             <div class="imgBx">
-                <img src="<?php echo $path; ?>assets/img/Dalton_profilePic.png" alt="Dalton K.">
+                <img src="<?php echo $path; ?>assets/img/dalton.png" alt="Dalton K.">
             </div>
             <div class="content">
                 <h3>Team Leader - Dalton K.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium. Pulvinar neque laoreet suspendisse interdum consectetur. Sit amet venenatis urna cursus eget. Sed faucibus turpis in eu mi bibendum neque egestas congue. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tellus id interdum velit laoreet id donec. Eget lorem dolor sed viverra ipsum nunc aliquet. Magna fermentum iaculis eu non. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.</p>
+                <p>Dalton Kruppenbacher is a second year CIT student and was the team leader for this project.As the teamleader he was responsible for when and where the team met, monitered progress, made weekly progress reports, presents our projects to the class, and also helped out everyone else on the team.</p>
             </div>
         </div>
         <div class="card">
-            <div class="imgBx">
-                <img src="<?php echo $path; ?>assets/img/Isaiah_profilePic.jpg" alt="Isaiah Rivera">
-            </div>
             <div class="content">
                 <h3>Information Architect - Nathaniel P.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium. Pulvinar neque laoreet suspendisse interdum consectetur. Sit amet venenatis urna cursus eget. Sed faucibus turpis in eu mi bibendum neque egestas congue. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tellus id interdum velit laoreet id donec. Eget lorem dolor sed viverra ipsum nunc aliquet. Magna fermentum iaculis eu non. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.</p>
+                <p>Nathaniel Pellegrino is a the Information architect for Gearmonke. Nate provided mobile and web views of what the site would look like and how it should be laided out, he also provided content and quizzes for each page making it easy to read and learn. </p>
             </div>
         </div>
         <div class="card">
-            <div class="imgBx">
-                <img src="<?php echo $path; ?>assets/img/Isaiah_profilePic.jpg" alt="Isaiah Rivera">
-            </div>
             <div class="content">
                 <h3>Graphic Design - Emma T.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium. Pulvinar neque laoreet suspendisse interdum consectetur. Sit amet venenatis urna cursus eget. Sed faucibus turpis in eu mi bibendum neque egestas congue. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tellus id interdum velit laoreet id donec. Eget lorem dolor sed viverra ipsum nunc aliquet. Magna fermentum iaculis eu non. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.</p>
+                <p>Emma Thomas is a first year Human-Centered Computing major and was the Graphic designer for Gearmonke. She provided a color scheme that has a welcoming and intuitive feel, she made a logo for our site, and also provided content for chapters on our site.</p>
             </div>
         </div>
         <div class="card">
-            <div class="imgBx">
-                <img src="<?php echo $path; ?>assets/img/Isaiah_profilePic.jpg" alt="Isaiah Rivera">
-            </div>
             <div class="content">
                 <h3>Content Creator - Trevor Y.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium. Pulvinar neque laoreet suspendisse interdum consectetur. Sit amet venenatis urna cursus eget. Sed faucibus turpis in eu mi bibendum neque egestas congue. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tellus id interdum velit laoreet id donec. Eget lorem dolor sed viverra ipsum nunc aliquet. Magna fermentum iaculis eu non. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.</p>
+                <p>Trever Yendrzeski is a student at RIT and was the Content creator for Gearmonke and he provided notes for each chapter and quiz outlines of our site. </p>
             </div>
         </div>
         

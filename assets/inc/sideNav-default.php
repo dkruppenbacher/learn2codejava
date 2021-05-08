@@ -1,59 +1,63 @@
-<div class='sidenav'>
-<?php
-$folderpath = $path."Content/";
-
-// CHECKING WHETHER PATH IS A DIRECTORY OR NOT
-if (is_dir($folderpath)) {
-    // GETING INTO DIRECTORY
-    $files = opendir($folderpath); {
-        // CHECKING FOR SMOOTH OPENING OF DIRECTORY
-        if ($files) {
-            //READING NAMES OF EACH ELEMENT INSIDE THE DIRECTORY 
-            while (($subfolder = readdir($files)) !== FALSE) {
-                // CHECKING FOR FILENAME ERRORS
-             $i = 0;
-             if (strstr($subfolder, ".")) {
-              $gfgSubfolder = strval($subfolder);
-              $dirpath = $path."Content/" . $subfolder;
-              $subfolderTrim = substr($gfgSubfolder, 0, -4);
-              $part1 = "<button class='sidenav-btn' onclick=";
-              $part2 = '"window.location=';
-              $part3 = ';"';
-              echo $part1."".$part2."'".$dirpath."'".$part3.">".$subfolderTrim."</button>";
-             }
-             else if ($subfolder != '.' && $subfolder != '..') {
-                    echo "<button class='dropdown-btn'>".$subfolder."\n<i class='fa fa-caret-down'></i>\n</button>";
-                      
-                $dirpath = $path."Content/" . $subfolder . "/";
-                    // GETING INSIDE EACH SUBFOLDERS
-                    if (is_dir($dirpath)) {
-                        $file = opendir($dirpath); {
-                            if ($file) {
-                //READING NAMES OF EACH FILE INSIDE SUBFOLDERS
-               while (($filename = readdir($file)) !== FALSE) {
-                if ($filename != '.' && $filename != '..') {
-                        $gfgFilename = strval($filename);
-                        $filenameTrim = substr($gfgFilename, 0, -4);
-                        if ($i == 0) {
-                          echo "\n<div class='dropdown-container'>";
-                          $i = 1;
-                        }
-                        echo "<a href='".$dirpath."".$gfgFilename."''>".$filenameTrim."</a>\n";
-                           }
-                         }
-                      }
-                   }
-               }
-                    if ($i == 1) {
-                      echo "</div>";
-                    }
-                  }
-                }
-            }
-        }
-    }
-
-?>
+   <div class="sidenav">
+    <button class="dropdown-btn">Chapter 1
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="<?php echo $path; ?>content/Chapter 1/1.1.php">1.1</a>
+    <a href="<?php echo $path; ?>content/Chapter 1/Chapter 1 quiz.php">Quiz</a>
+  </div>
+    <button class="dropdown-btn">Chapter 2
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="<?php echo $path; ?>content/Chapter 2/2.1.php">2.1</a>
+    <a href="<?php echo $path; ?>content/Chapter 2/2.2.php">2.2</a>
+    <a href="<?php echo $path; ?>content/Chapter 2/Chapter 2 quiz.php">Quiz</a>
+  </div>
+    <button class="dropdown-btn">Chapter 3
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="<?php echo $path; ?>content/Chapter 3/3.1.php">3.1</a>
+    <a href="<?php echo $path; ?>content/Chapter 3/3.2.php">3.2</a>
+    <a href="<?php echo $path; ?>content/Chapter 3/3.3.php">3.3</a>
+    <a href="<?php echo $path; ?>content/Chapter 3/Chapter 3 quiz.php">Quiz</a>
+  </div>
+    <button class="dropdown-btn">Chapter 4
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="<?php echo $path; ?>content/Chapter 4/4.1.php">4.1</a>
+    <a href="<?php echo $path; ?>content/Chapter 4/4.2.php">4.2</a>
+    <a href="<?php echo $path; ?>content/Chapter 4/Chapter 4 quiz.php">Quiz</a>
+  </div>
+  <button class="dropdown-btn">Chapter 5
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="<?php echo $path; ?>content/Chapter 5/5.1.php">5.1</a>
+    <a href="<?php echo $path; ?>content/Chapter 5/5.2.php">5.2</a>
+    <a href="<?php echo $path; ?>content/Chapter 5/Chapter 5 quiz.php">Quiz</a>
+  </div>
+  <button class="dropdown-btn">Chapter 6
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="<?php echo $path; ?>content/Chapter 6/6.1.php">6.1</a>
+    <a href="<?php echo $path; ?>content/Chapter 6/6.2.php">6.2</a>
+    <a href="<?php echo $path; ?>content/Chapter 6/6.3.php">6.3</a>
+    <a href="<?php echo $path; ?>content/Chapter 6/Chapter 6 quiz.php">Quiz</a>
+  </div>
+  <button class="dropdown-btn">Chapter 7
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="<?php echo $path; ?>content/Chapter 7/7.1.php">7.1</a>
+    <a href="<?php echo $path; ?>content/Chapter 7/7.2.php">7.2</a>
+    <a href="<?php echo $path; ?>content/Chapter 7/7.3.php">7.3</a>
+    <a href="<?php echo $path; ?>content/Chapter 7/Chapter 7 quiz.php">Quiz</a>
+  </div>
+  <button class='sidenav-btn' onclick="window.location='<?php echo $path; ?>content/Project 1.php'">Project 1</button>
 </div>
 <script> 
 var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -71,9 +75,3 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script> 
-
-<?php
-  echo "<div class='page'>";
-  echo "<p class='breadcrumbs'>".$myd," > ".$page."</p>";
-  echo "<h1>".$page."</h1>";
-?>
