@@ -1,9 +1,9 @@
 <?php
-  $page = "Project 1: Simple Calculator";
+  $page = "Project 2: Simple Calculator with Error Checking";
   $pagetype = "content";
   $path = "../";
   $mydir1 = dirname(__FILE__);
-  $myd = substr($mydir1, 40);
+  $myd = substr($mydir1, 38);
   include($path.'assets/inc/head-default.php');
 ?>
 <body>
@@ -24,7 +24,7 @@
   <li>A switch statement case always requires a break, you won’t be able to get out of the switch statement otherwise </li>
   <li>String content equality should be checked by invoking the .equals() or .equalsIgnoreCase() methods on the String in question</li>
 </ul>  
-<h3>Need a hint? Here's the key:<h3>
+<h3>Code Shell:<h3>
 <code>
 import java.util.*;<br><br>
 
