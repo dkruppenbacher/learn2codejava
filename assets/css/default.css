@@ -393,6 +393,104 @@ a {
         }
     }
    /* end of about*/
+/* start of Comments*/
+.share{
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+        input[type=text], select{
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #809fff;
+            border-radius: 4px;
+            resize: vertical;
+            font-family: 'Coda';
+        }
+    textarea{
+            font-family: 'Coda';
+            width: 66.5%;
+            padding: 12px;
+            border: 1px solid #809fff;
+            border-radius: 4px;
+            resize: vertical;
+    }
+        input[type=submit] {
+            background-color: lightblue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: dodgerblue;
+        }
+
+        .Ccontainer {
+            border-radius: 5px;
+            background-color: #6AABF0;
+            padding: 20px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .label {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+            display: inline-block;
+        }
+
+        .userinput {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h3{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .comment{
+             padding-left: 100px;
+             margin: inherit;
+             margin-right: 100px;
+            
+        }
+        .message{
+            text-indent: 10px;
+             word-wrap: break-word;
+        }
+
+
+
+        /* Media query for comments*/
+    @media (max-width: 768px){
+        .label,.userInput,input[type=submit]{
+            width: 100%;
+            margin-top: 0;   
+        }
+        textarea{
+            width: 100%;
+            
+        }
+        .Ccontainer{
+            margin:auto;
+        }  
+    }
+
+/* end of comments*/
 
 
 
