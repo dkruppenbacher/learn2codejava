@@ -1,6 +1,6 @@
 <!-- head-normal.php start -->
 <?php
-  $page = "Quiz 3 Results";
+  $page = "Quiz 7 Results";
   $pagetype = "content";
   $path = '../';
   $mydir1 = dirname(__FILE__);
@@ -38,12 +38,15 @@
                 break;
             case 'b':
                 $is1Correct = false;
-                $reason1 = "This answer is NOT correct! An if statement can compare more than just numbers.";
+                $reason1 = "This answer is NOT correct! The correct statement is <code>.hasNextLine()</code>";
                 break;
             case 'c':
                 $is1Correct = false;
-                $reason1 = "This answer is NOT correct! The if statement is not looking for false expressions.";
+                $reason1 = "This answer is NOT correct! The correct statement is <code>.hasNextLine()</code>";
                 break;  
+            case 'd':
+                $is2Correct = false;
+                $reason1 = "This answer is NOT correct! The correct statement is <code>.hasNextLine()</code>";
             default:
                 $is1Correct = false;
                 $reason1 = "No answer selected.";
@@ -54,12 +57,12 @@
            $is2Correct = false;
            $reason2 = "No answer input."; 
         } else {
-            if($q2 == "if () {} else () {}") {
+            if($q2 == "scn.nextLine()") {
                 $is2Correct = true;
                 $reason2 = "This answer is correct!"; 
             } else {
                 $is2Correct = false;
-                $reason2 = "This answer is NOT correct! The correct answer is <code>if () {} else () {}</code>."; 
+                $reason2 = "This answer is NOT correct! The correct answer is <code>scn.nextLine()</code>"; 
             }
         }
 
@@ -67,20 +70,12 @@
         switch($q3) {
             case 'a':
                 $is3Correct = false;
-                $reason3 = "This answer is NOT correct. Both sides need to be true.";
+                $reason3 = "This answer is NOT correct. While PrintWriter is used for file writing, Scanner is used for file reading.";
                 break;
             case 'b':
-                $is3Correct = false;
-                $reason3 = "This answer is NOT correct. Both sides need to be true.";
-                break;
-            case 'c':
-                $is3Correct = false;
-                $reason3 = "This answer is NOT correct! Both sides need to be true.";
-                break;
-            case 'd':
                 $is3Correct = true;
-                $reason3 = "This answer is correct!";
-                break;        
+                $reason3 = "This answer is correct!.";
+                break;       
             default:
                 $is3Correct = false;
                 $reason3 = "No answer selected.";
@@ -90,19 +85,18 @@
         switch($q4) {
             case 'a':
                 $is4Correct = false;
-                $reason4 = "This answer is NOT correct. At least one side must be TRUE.";
-                break;
+                $reason4 = "This answer is NOT correct. CSV files are comma separated and must be split by the deliminer comma.";
             case 'b':
                 $is4Correct = false;
-                $reason4 = "This answer is partially correct! There are multiple correct answers.";
+                $reason4 = "This answer is partially correct, CSV files are comma separated, but C was also correct.";
                 break;
             case 'c':
-                $is4Correct = true;
-                $reason4 = "This answer is correct!";
+                $is4Correct = false;
+                $reason4 = "This answer is partially correct, CSV files are split by the deliminer comma, but B was also correct.";
                 break;
             case 'd':
-                $is4Correct = false;
-                $reason4 = "This answer is NOT correct! One side must be TRUE, and this answer does not confirm this.";
+                $is4Correct = true;
+                $reason4 = "This answer is correct!";
                 break;        
             default:
                 $is4Correct = false;
@@ -113,16 +107,20 @@
         switch($q5) {
             case 'a':
                 $is5Correct = false;
-                $reason5 = "This answer is NOT correct! Only symbols may be used as operators.";
+                $reason5 = "This answer is NOT correct! <code>.readUTF()</code> is a method.";
                 break;
             case 'b':
                 $is5Correct = false;
-                $reason5 = "This answer is NOT correct! This is not a valid operator for a boolean expression.";
+                $reason5 = "This answer is NOT correct! <code>.readInt()</code> is a method.";
                 break;
             case 'c':
                 $is5Correct = true;
                 $reason5 = "This answer is correct!";
-                break;  
+                break;
+            case 'd':
+                $is5Correct = false;
+                $reason5 = "This answer is NOT correct!<code>.readDouble()</code> is a method used.";
+                break;
             default:
                 $is5Correct = false;
                 $reason5 = "No answer selected.";
