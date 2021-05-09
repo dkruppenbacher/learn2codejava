@@ -1,6 +1,6 @@
 <footer>       
     <button class="btn-toggle">Toggle Dark Mode</button>
-    <p class="footer">&emsp;&emsp;@2021 GearMonke Inc.&emsp;&emsp;<a href="mailto:info@learn2codejava.com">Contact: info@learn2codejava.com</a>&emsp;&emsp;<a href="#">Donate</a></p>
+    <p class="footer">&emsp;&emsp;@2021 GearMonke Inc.&emsp;&emsp;</p>
 </footer>
 	<script>
   const btn = document.querySelector(".btn-toggle");

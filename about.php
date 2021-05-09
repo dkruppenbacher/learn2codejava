@@ -1,7 +1,7 @@
 <!-- head-normal.php start -->
 <?php
   $page = "aboutus";
-  $pagetype = "home";
+  $pagetype = "aboutus";
   $path = './';
   $mydir1 = dirname(__FILE__);
   $myd = substr($mydir1, 38);
