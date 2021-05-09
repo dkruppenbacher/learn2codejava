@@ -1,6 +1,0 @@
-Header height is 80px compared to 100px for Desktop
-
-Logo in navbar is resized to fit
-
-WHEN IN PORTRAIT MODE:
-side nav is 120px compared to 190px for Desktop
