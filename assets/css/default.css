@@ -87,6 +87,10 @@ nav ul {
   text-align: center;
   height: 100px;
 }
+
+.showHideSidenav {
+  display: none;
+}
 /*Giving our li-nav  a background and height-space*/
 nav li {
   flex: 1;
@@ -157,8 +161,10 @@ h2{
   background-color: #cce0f6;
   overflow-x: hidden;
   padding-top: 20px;
-  
+  transition: 0.5s;
 }
+
+.hide { opacity: 0; height: 10px}
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn, .sidenav-btn {
@@ -591,4 +597,11 @@ a {
   ul {
     padding-left: 30px;
   }
+  .showHideSidenav {
+    display: block;
+  }
+  .gearMonke {
+  width: 100px; 
+  height: 100px;
+}
 }

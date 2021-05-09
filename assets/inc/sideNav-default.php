@@ -1,4 +1,4 @@
-   <div class="sidenav">
+   <div class="sidenav" id="sidenav">
     <button class="dropdown-btn">Chapter 1
     <i class="fa fa-caret-down"></i>
   </button>
