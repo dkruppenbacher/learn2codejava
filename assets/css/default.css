@@ -473,7 +473,9 @@ a {
              padding-left: 100px;
              margin: inherit;
              margin-right: 100px;
-            
+             border-bottom: 1px solid var(--table-border);
+             transition: border-bottom 1.5s;
+
         }
         .message{
             text-indent: 10px;
@@ -484,17 +486,7 @@ a {
 
         /* Media query for comments*/
     @media (max-width: 768px){
-        .label,.userInput,input[type=submit]{
-            width: 100%;
-            margin-top: 0;   
-        }
-        textarea{
-            width: 100%;
-            
-        }
-        .Ccontainer{
-            margin:auto;
-        }  
+          
     }
 
 /* end of comments*/
@@ -601,7 +593,18 @@ a {
     display: block;
   }
   .gearMonke {
-  width: 100px; 
-  height: 100px;
-}
+    width: 100px; 
+    height: 100px;
+  }
+  .label,.userInput,input[type=submit]{
+    width: 100%;
+    margin-top: 0;   
+  }
+  textarea{
+    width: 100%;
+            
+  }
+  .Ccontainer{
+    margin:auto;
+  }
 }

@@ -41,7 +41,7 @@
             <!-- loops through rrows and prints info out in the list -->
             <?php
                 while($row = $result -> fetch_assoc()) {
-                echo "<p><strong><div class='comment'>" . $row['name'] . ":</strong>". "@<i><small>" .$row['date'] . "</small></i><br>" . "<small><div class='message'>" . $row['message']  . "</div></small></p></div>"; 
+                echo "<p><strong><div class='comment'>" . $row['name'] . ":</strong> ". "@<i><small>" .$row['date'] . "</small></i><br>" . "<small><div class='message'>" . $row['message']  . "</div></small></p></div>"; 
             } 
             ?>
 
